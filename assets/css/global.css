@@ -1,0 +1,631 @@
+/*
+ Table Of Contents
+ 1.) Eric Meyer's Reset
+ 2.) Global Typography
+ 2.0.1) Font Face
+ 2.0.2) Global Headings
+ 2.0.3) Form Elements
+ 2.0.4) List styles
+ 2.0.5) General Text Formatting
+ 2.0.6) Link elements
+ 2.0.7) Table Elements
+ 2.0.8) Button Styles
+ 2.0.9) Sprite Icons
+
+ 3.) Site Wide Content
+ 4.) Header Style
+ 5.) Footer Style
+ ===============================================*/
+/*
+ 1.) Eric Meyer's Reset
+ ----------------------------------------*/
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul, li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*
+ 1.) Global Typography
+ ----------------------------------------*/
+*, :before, :after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-size: 100%;
+}
+body {
+	font-size: 62.5%;
+	font-family: 'Source Sans Pro', sans-serif;
+	line-height: 1;
+	font-weight: 400;
+	color: #fff;
+}
+html {
+	font-size: 10px;
+}
+/*
+ 2.0.1) Font Face
+ -----------------------------*/
+@font-face {
+	font-family: 'abelregular';
+	src: url('abel-regular-webfont.woff2') format('woff2'), url('abel-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'source_sans_probold';
+	src: url('source-sans-pro.bold-webfont.woff2') format('woff2'), url('source-sans-pro.bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'source_sans_proregular';
+	src: url('source-sans-pro.regular-webfont.woff2') format('woff2'), url('source-sans-pro.regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'titillium_webbold';
+	src: url('titillium-web.bold-webfont.woff2') format('woff2'), url('titillium-web.bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'titillium_weblight';
+	src: url('titillium-web.light-webfont.woff2') format('woff2'), url('titillium-web.light-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'titillium_websemibold';
+	src: url('titillium-web.semibold-webfont.woff2') format('woff2'), url('titillium-web.semibold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*
+ 2.0.2) Global Headings
+ -----------------------------*/
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	color: #161e21;
+}
+h1 {
+	font-size: 4.8rem;
+	color: #ddd;
+	line-height: 1.23;
+	margin-bottom: 10px;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 300;
+	margin-left: -4px;
+}
+h2 {
+	font-size: 4.8rem;
+	color: #ddd;
+	line-height: 1.23;
+	margin-bottom: 10px;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 300;
+	margin-left: -4px;
+}
+h3 {
+	font-size: 2.4rem;
+	color:#ddd;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 700;
+}
+h4 {
+	font-size: 1.8rem;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 700;
+	color:#ddd;
+	line-height: 1.6;
+}
+h5 {
+
+}
+h6 {
+
+}
+img {
+	height: auto;
+	max-width: 100%;
+	width: auto;
+}
+::-webkit-input-placeholder {
+	color: #acacac;
+	opacity: 1;
+	font-size: 1.6rem;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+:-moz-placeholder {/* Firefox 18- */
+	color: #acacac;
+	opacity: 1;
+	font-size: 1.6rem;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+::-moz-placeholder {/* Firefox 19+ */
+	color: #acacac;
+	opacity: 1;
+	font-size: 1.6rem;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+:-ms-input-placeholder {
+	color: #acacac;
+	opacity: 1;
+	font-size: 1.6rem;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*
+ 2.0.3) Form Elements
+ -----------------------------*/
+select, textarea {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+input {
+	line-height: normal;
+}
+input[type="text"], input[type="email"], input[type="password"], input[type="radio"] select {
+	font-size: 1.6rem;
+	color: #acacac;
+	border: none;
+	padding: 16px 10px 12px 19px;
+	width: 100%;
+	font-weight: 400;
+	height: 30px;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin-bottom: 14px;
+	border-radius:5px;
+}
+textarea{
+	width: 668px;
+	height: 202px;
+	padding: 17px;
+	color:#acacac;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.6rem;
+	border:none;
+	resize: none;
+	
+}
+select {
+	padding-bottom: 10px;
+}
+input:focus, select:focus, textarea:focus, button:focus {
+	outline: 0;
+}
+input[type="checkbox"], input[type="radio"] {
+	padding: 0;
+	border: none;
+}
+button, input[type="button"], input[type="reset"], input[type="submit"], input[type="file"] {
+	-webkit-appearance: none;
+	cursor: pointer;
+	line-height: normal;
+	overflow: visible;
+	border: none;
+	box-shadow:none;
+}
+button[disabled], input[disabled] {
+	cursor: default;
+	color: #999;
+	border-color: #ccc;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+/*
+ 2.0.4) List Styles
+ ---------------------------------*/
+ul, ol, dl {
+	font-size: 100%;
+	line-height: 1.5;
+}
+li, dt {
+	line-height: 1.5em;
+}
+dl {
+	margin: 0 0 1em 0;
+}
+dd {
+	margin: 0 0 1em 0.8em;
+}
+ul {
+	list-style-type: disc;
+	margin: 0 0 0 0;
+}
+ol {
+	list-style-type: decimal;
+	margin: 0 0 1em 0;
+}
+ul ul, ol ul {
+	list-style-type: circle;
+	margin-top: 0;
+}
+ol ol {
+	list-style-type: lower-latin;
+	margin-top: 0;
+}
+address{
+	font-size: 1.6rem;
+	color:#363636;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+/*
+ 2.0.5) General Text Formatting
+ -----------------------------------*/
+p {
+	line-height: 1.7;
+	margin-bottom: 30px;
+	font-size: 1.8rem;
+	color:#fff;
+}
+blockquote, cite, q, var, dfn {
+	font-style: italic;
+}
+blockquote {
+	background: transparent;
+	color: #666666;
+}
+pre, code, kbd, tt, samp, var {
+	font-size: 100%;
+}
+pre {
+	font-size: 100%;
+	line-height: 1.5;
+	margin: 0 0 1.5em 0;
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+pre, code {
+	color: #880000;
+}
+kbd, samp, var {
+	color: #666666;
+	font-weight: bold;
+}
+acronym, abbr {
+	border-bottom: 1px #aaa dotted;
+	font-variant: small-caps;
+	cursor: help;
+}
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+/*
+ 2.0.6) Link style
+ -------------------------*/
+a {
+	text-decoration: none;
+}
+a:hover, a:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:active {
+	outline: none;
+}
+/* 2.0.7) Button Styles
+ -------------------------*/
+.btn {
+	font-size: 1.6rem;
+	color: #fffefe;
+	font-weight: 700;
+	padding: 14px 0px;
+	display: block;
+	background: #52b038;
+	border-radius: 5px;
+	height: 39px;
+	min-width: 99px;
+	text-align: center;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease ;
+	-ms-transition: 0.3s ease ;
+	-o-transition: 0.3s ease ;
+	transition: 0.3s ease ;
+}
+.btn.active,.btn:hover {
+	background: #fffefe;
+	color: #52b038;
+}
+.white-btn {
+	background: transparent;
+	border: 1px solid #fff;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease ;
+	-ms-transition: 0.3s ease ;
+	-o-transition: 0.3s ease ;
+	transition: 0.3s ease ;
+}
+
+.blue-btn {
+	background: transparent;
+	border: 1px solid #ddd;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease ;
+	-ms-transition: 0.3s ease ;
+	-o-transition: 0.3s ease ;
+	transition: 0.3s ease ;
+}
+
+.white-btn:hover,.white-btn.active{
+	background: #fff;
+	color: #707070;
+}
+/*
+ 2.0.8) Sprite Icons
+ -------------------------*/
+.owl-prev:after,.owl-next:after,.check,.icon-one,.icon-two,.icon-three,.round-icon,.locator,.tel-icon,.mail-box,.icon-social-one,.icon-social-two,.icon-social-three,.icon-social-four,.round-icon-02{
+	background-image: url(../images/sprite.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 11px;
+	width: 8px;
+	border: none;
+}
+/* Containers
+ ----------------------------------------------------------------------------------------------------*/
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1170px;
+	width: 100%;
+}
+
+/* `Clear Floated Elements
+ ----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+.clearfix:before, .clearfix:after {
+	content: '\0020';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+.clearfix:after {
+	clear: both;
+}
+/*
+ The following zoom:1 rule is specifically for IE6 + IE7.
+ Move to separate stylesheet if invalid CSS is a problem.
+ */
+/*
+ 3.) Site Wide Content
+ ------------------------------*/
+.relative {
+	position: relative;
+}
+.text-center {
+	text-align: center;
+}
+.dis-blk {
+	display: block;
+}
+.divider{
+	width: 100px;
+	display: block;
+	background: #fff;
+	height: 2px;
+}
+
+
+/*
+ 4.) Header Styles
+ ------------------------------*/
+#header {
+	padding: 39px 0px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 999;
+}
+.nav-wrap {
+	float: left;
+}
+.btn-wrap {
+	float: right;
+}
+.logo {
+	float: left;
+}
+.navigation {
+	float: right;
+	margin: 36px 0 10px 31px;
+}
+.navigation li {
+	float: left;
+	margin-right: 25px;
+}
+.navigation li a {
+	font-size: 1.6rem;
+	color: #fff;
+	font-weight: 700;
+}
+.btn-wrap ul li {
+	float: left;
+	margin-left: 19px;
+}
+.btn-wrap {
+	margin: 20px 0;
+}
+.menu-btn{
+	display: none;	
+}
+/*
+ 5.) Footer Styles
+ ------------------------------*/
+.primary-footer{
+	padding: 38px 0 44px;
+	background: #192532;
+}
+.primary-footer h4{
+	font-weight: 300;
+	text-transform:uppercase;
+	margin-bottom: 27px;
+	color:#eeeeee;
+}
+.primary-footer  li a{
+	font-size: 1.4rem;
+	color: #eeeeee;	
+}
+.primary-footer li{
+	margin-bottom: 12px;
+}
+.primary-footer li span{
+	font-weight: 700;
+}
+.primary-footer nav{
+	width:25%;
+}
+.primary-footer  li a span{
+	font-weight: 700;
+}
+.secondary-footer span{
+	font-size: 1.4rem;
+	color: #eee;
+	font-weight: 700;
+}
+.primary-footer nav{
+	float:left;
+}
+.primary-footer .contact-head{
+	margin-bottom: 22px;
+}
+.primary-footer address{
+	line-height: 1.65;
+	margin-bottom: 7px;
+}
+.primary-footer address{
+	font-size: 1.4rem;
+	color:#eee;
+}
+.primary-footer .tel-num,.primary-footer  .email{
+	font-size: 1.4rem;
+	color:#eee;
+	margin-bottom: 9px;
+}
+.primary-footer .quick-link li a{
+	text-transform:uppercase;
+}
+.icon-social-one{
+	background-position: 0 -82px;
+	width: 40px;
+	height: 40px;
+}
+.icon-social-two{
+	background-position: -51px -84px;
+	width: 40px;
+	height: 40px;
+}
+.icon-social-three{
+	background-position: -101px -86px;
+	width: 40px;
+	height: 40px;
+}
+.icon-social-four{
+	background-position: -150px -87px;
+	width: 40px;
+	height: 40px;
+}
+.social-wrap{
+	float:right;
+	width: 25%;
+}
+
+.partner-wrap{
+	float:right;
+	width: 25%;
+}
+.primary-footer .social-wrap h4{
+	margin-bottom: 20px;
+}
+.social-icon li{
+	float:left;
+	margin-right: 10px;
+}
+.secondary-footer{
+	padding: 17px 0;
+	background: #000000;
+}
+
+div#partnerssect ul.partners li{
+	display : inline;
+	margin: 10px;
+}
+
+div#partnerssect {
+	padding: 20px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+div#partnerssect h2{
+	color: #2aa5dd;
+	font-size: 28px;
+	font-weight: 500;
+}

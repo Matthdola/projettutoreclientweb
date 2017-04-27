@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  
+  <meta name="author" content="Jake Rocheleau">
+  <link rel="shortcut icon" href="http://d15dxvojnvxp1x.cloudfront.net/assets/favicon.ico">
+  <link rel="icon" href="http://d15dxvojnvxp1x.cloudfront.net/assets/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta content="" name="description">
+  <meta name="keywords" content="Mobile, android" />
+  <title>Welcome To Healthlandling</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css" media="screen">
+  <link href="https://fonts.googleapis.com/css?family=Abel%7CSource+Sans+Pro:400,700%7CTitillium+Web:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/global.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" media="screen">
+  <!-- Bootstrap -->
+  <link href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="assets/css/ie8.css" media="screen">
+    <![endif]-->
+
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+</head>
+  <body>
+    <!--Page Wrapper Start-->
+    <div id="wrapper" class="inner-page">
+      <!--Header Section Start-->
+      <header id="header" >
+        <div class="container clearfix">
+          <div class="nav-wrap clearfix">
+            <h href="index.html" >HealthLandling</h>
+            <a class="menu-btn" href="javascript:void(0)"> <i> </i> <i> </i> <i> </i> </a>
+            <nav class="navigation">
+              <ul class="clearfix">
+                <li>
+                  <a href="javascript:void(0)" >Centres Medicaux</a>
+                </li>
+              </ul>
+            </nav>
+
+          </div>
+          <div class="btn-wrap clearfix">
+            <ul>
+              <li>
+                <a href="https://www.webapp.mycumulus.com" class="btn white-btn">Log  Out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!--Header Section End-->
+
+      <!--Content Area Start-->
+      <div id="Content" style="background-color:rgba(0,0,0,0.6);">
+        <!--import Section End-->
+
+        <!--Cloud Section Start-->
+        <section class="cloud-wrap">
+          <!--container Section Start-->
+          <div class="container clearfix">
+            <div class="view-data-block">
+              <div class="specification-block-one data-wrap">
+                  <div id="loading">
+                  </div>
+                  <h3>Liste des centres </h3>
+                  <table id="listcentre" class="table table-bordered" style="font-size: 18px;" >
+                    <thead>
+                      <tr>
+                        <th>Nom</th>
+                        <th>Domaine</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody id="data">
+                    </tbody>
+                  </table>
+                  <br><br>
+                  <ul class="spaecifcation-list">
+                    <li>
+                      <a id="ajoutercentre" href="javascript:void(0)"></i>Ajouter un centre.</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+          <!--container Section End-->
+        </section>
+        <!--Cloud Section End-->
+        <!--Network Section End-->
+
+      <section id="addcentre" class="cloud-wrap displayno">
+          <!--container Section Start-->
+          <div class="container clearfix">
+            <div class="view-data-block">
+              <div class="specification-block-one data-wrap">
+                  <h3>Ajout d'un centre de santé</h3>
+                  <div id="w">
+                    <p>Les champs avec * sont obligatoires</p>
+                    <input type="text" name="ghcentrename" id="ghcentrename" class="fieldtype" placeholder="* nom Centre ...">
+                    <input type="text" name="ghcentreemail" id="ghcentreemail" class="fieldtype" placeholder="* Email ...">
+                    <input type="text" name="ghcentreville" id="ghcentreville" class="fieldtype" placeholder="* Ville ...">
+                    <input type="text" name="ghusernom" id="ghpays" class="fieldtype" placeholder="Pays ...">
+                    <input type="text" name="ghusertelephone" id="ghusertelephone" class="fieldtype" placeholder="Telephone ...">
+                    <input type="text" name="ghusercellulaire" id="ghusercellulaire" class="fieldtype" placeholder="Cellulaire ...">
+                    <a href="#" class="ghsubmitbtn" id="ghsubmitbtn">Créer</a>
+                    <div id="ghapidata" class="clearfix"></div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!--container Section End-->
+        </section>
+        <!--Android Section End-->
+
+      </div>
+      <!--Content Area End-->
+
+      <!--Footer Section Start-->
+      <footer id="footer">
+
+        <div class="primary-footer ">
+          <!--container Section Start-->
+          <div class="container clearfix">
+            <nav>
+              <h4>About Us</h4>
+              <p id="aboutus">
+                Ce produit est construit par AKAKPO Koffi Daniel, DOLA Koami, EGBENDEWE Komi Joseph
+                dans le cadre du Projet tuteure dans le curcus du Master International
+
+              </p>
+            </nav>
+
+            <nav>
+              <h4>Quick Links</h4>
+              <ul class="quick-link">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                  <a href="javascript:void(0)" data-id="#contact">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+
+            
+            <div class="social-wrap">
+              <!-- <h4>Connect with Us</h4>
+              <ul class="social-icon clearfix">
+                <li>
+                  <a href="#" class="icon-social-one" ></a>
+                </li>
+                <li>
+                  <a href="#" class="icon-social-two" ></a>
+                </li>
+                <li>
+                  <a href="#" class="icon-social-three" ></a>
+                </li>
+                <li>
+                  <a href="#" class="icon-social-four" ></a>
+                </li>
+              </ul> -->
+            </div>
+
+          </div>
+          <!--container Section End-->
+        </div>
+        
+
+      </footer>
+      <!--Footer Section End-->
+
+    </div>
+    <!--Page Wrapper End-->
+    <script type="text/javascript" src="assets/js/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/site.js"></script>
+    <script type="text/javascript">
+    $(function(){
+      $('#ghsubmitbtn').on('click', function(e){
+        e.preventDefault();
+        $('#ghapidata').html('<div id="loader"><img src="css/loader.gif" alt="loading..."></div>');
+        
+        var requri   = 'http://localhost:9000/v1/centres';
+
+        var requestData = {
+          nom: $('#ghcentrename').val(),
+          email: $('#ghcentreemail').val(),
+          ville: $('#ghcentreville').val(),
+          pays: $('#ghpays').val(),
+          prenom: $('#ghuserprenom').val(),
+          telephone: $('#ghusertelephone').val(),
+          cellulaire: $('#ghusercellulaire').val()
+        };
+
+        alert(JSON.stringify(requestData));
+        requestJSON(requri, requestData, function(json) {
+          if(json.message == "Not Found" || username == '') {
+            $('#ghapidata').html("<h2>No User Info Found</h2>");
+          }
+          
+          else {
+            // else we have a user and we display their info
+            console.log(json);
+          
+            var centre = json.centre;
+            var name = document.createElement('td');
+
+            
+            name.innerHTML = centre.nom;
+            var ville = document.createElement('td');
+            ville.innerHTML = centre.ville;
+
+            var line = document.createElement('tr');
+            line.appendChild(name);
+            line.appendChild(ville);
+
+            var pays = document.createElement('td');
+            pays.innerHTML = centre.pays;
+
+            var telephone = document.createElement('td');
+            telephone.innerHTML = centre.telephone;
+
+            var cellulaire = document.createElement('td');
+            cellulaire.innerHTML = centre.cellulaire;
+
+            var email = document.createElement('td');
+            email.innerHTML = centre.email;
+
+            document.getElementById("data").appendChild(line);
+
+            } // end outputPageContent()
+          }); // end else statement
+        }); // end requestJSON Ajax call
+      }); // end click event handler
+      
+    $('#ajoutercentre').on('click', function(e){
+      e.preventDefault();
+
+      //Show add centre formulaire
+      document.getElementById("addcentre").style.display = "block";
+    });
+
+    $.when($.ready).then(function(e){
+      $('#loading').html('<div id="loader"><img src="css/loader.gif" alt="loading..."></div>');
+        var requri   = 'http://localhost:9000/v1/centres';
+
+        getRequestJSON(requri, function(json) {
+          if(json.message == "Not Found") {
+            $('#loading').html("<h2>No User Info Found</h2>");
+          }else {
+            // else we have a user and we display their info
+          
+            document.getElementById("loading").style.display = "none";
+            console.log(json);
+            for (var i = 0; i < json.centres.length; i++) {
+              var centre = json.centres[i]
+              var name = document.createElement('td');
+
+              name.innerHTML = centre.nom;
+              var ville = document.createElement('td');
+              ville.innerHTML = centre.ville;
+
+              var line = document.createElement('tr');
+              line.appendChild(name);
+              line.appendChild(ville);
+
+              var pays = document.createElement('td');
+              pays.innerHTML = centre.pays;
+
+              var telephone = document.createElement('td');
+              telephone.innerHTML = centre.telephone;
+
+              var cellulaire = document.createElement('td');
+              cellulaire.innerHTML = centre.cellulaire;
+
+              var email = document.createElement('td');
+              email.innerHTML = centre.email;
+
+              document.getElementById("data").appendChild(line);
+            };
+            
+          } // end else statement
+          }); // end requestJSON Ajax call
+      });
+
+      function getRequestJSON(url, callback) {
+        $.ajaxSetup({
+          headers: {
+            'Content-Type': "application/json"
+            }
+        });
+        
+        $.ajax({
+          url: url,
+          complete: function(xhr) {
+            callback.call(null, xhr.responseJSON);
+          }
+        });
+      };
+
+      function requestJSON(url, reqData, callback) {
+
+        $.ajaxSetup({
+          headers: {
+            'Content-Type': "application/json"
+            }
+        });
+        
+        $.ajax({
+          type: "POST",
+          url: url,
+          data: JSON.stringify(reqData),
+          complete: function(xhr) {
+            callback.call(null, xhr.responseJSON);
+          }
+        });
+    };
+    </script>
+  </body>
+</html>
