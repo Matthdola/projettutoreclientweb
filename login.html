@@ -73,7 +73,7 @@
             <nav>
               <h4>About Us</h4>
               <p id="aboutus">
-                Ce produit est construit par AKAKPO Koffi Daniel, DOLA Koami, EGBENDEWE Komi Joseph
+                Ce application est conçu par AKAKPO Koffi Daniel, DOLA Koami, EGBENDEWE Komi Joseph
                 dans le cadre du Projet tuteure dans le curcus du Master International
 
               </p>
@@ -126,7 +126,11 @@
   $(function(){
     $('#ghsubmitbtn').on('click', function(e){
       e.preventDefault();
-      $('#ghapidata').html('<div id="loader"><img src="css/loader.gif" alt="loading..."></div>');
+      if($('#ghusername').val() === "" || $('#ghuserpassword').val() === ""){
+        $('#ghapidata').html("<h4>Le nom d'utilisateur ou le mot de passe ne peut être vide</h4>");
+        return;
+      }
+      $('#ghapidata').html('<div id="loader"><img src="css/loader.gif" alt="Chargement..."></div>');
       
       var username = $('#ghusername').val();
       //var requri   = 'http://192.168.1.32:9000/v1/users/login';
@@ -139,11 +143,11 @@
         }
       };
       requestJSON(requri, requestData, function(json) {
-        if(json.message == "Not Found") {
-          $('#ghapidata').html("<h2>No User Info Found</h2>");
-        }
-        
-        else {
+        if (json === undefined) {
+          $('#ghapidata').html("<h4>Erreur de connection au serveur, verifiez que vous êtes connecté</h4>");
+        } else if(json.status > 202) {
+          $('#ghapidata').html("<h3>Aucun utilisateur trouvé avec les identifiants fournits</h3>");
+        } else {
           // else we have a user and we display their info
           console.log(json);
           var user_id   = json.user_id;
@@ -154,7 +158,7 @@
             var newuri   = "http://localhost:9000/v1/users/" + token.user_id;
             requestUserJSON(newuri, function(userjson){
                 if(json.message == "Not Found") {
-                  $('#ghapidata').html("<h2>No User Info Found</h2>");
+                  $('#ghapidata').html("<h4>Aucun utilisateur trouvé avec les identifiants fournits</h4>");
                 }
                 console.log(userjson);
                 var user = userjson;
@@ -167,7 +171,7 @@
                 
             });
           } else{
-            $('#ghapidata').html("<h2>No User Info Found</h2>");
+            $('#ghapidata').html("<h2>Aucun utilisateur trouvé avec les identifiants fournits</h2>");
           }
         } // end else statement
       }); // end requestJSON Ajax call
